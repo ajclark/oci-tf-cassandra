@@ -2,10 +2,11 @@
 
 ## Introduction
 This terraform configuration provisions the following resources:
-Cassandra ARM Cluster: `30 x VM.Standard.A1.Flex.8-64`
-Cassandra AMD Cluster: `30 x VM.Standard.E4.Flex-4-64`
-Cassandra Stress Node Fleet: `30 x VM.Standard.A1.Flex-8-64`
-
+```
+Cassandra ARM Cluster: 30 x VM.Standard.A1.Flex.8-64
+Cassandra AMD Cluster: 30 x VM.Standard.E4.Flex-4-64
+Cassandra Stress Node Fleet: 30 x VM.Standard.A1.Flex-8-64
+```
 ## Prerequisites / assumptions
 * An existing VCN with a single subnet should be already present in the target tenancy. This should be a public subnet and instances are automatically given public IPs.
 
@@ -29,11 +30,11 @@ compartment-id=ocid1.compartment.oc1..aaaaaaaa4cv2fsc3qf5sq6ub2aazk5fz37t35b3syj
 ```
 
 ## Terraform layout explanation
-`compute_arm.tf` - Cassandra ARM compute/block OCI configuration
-`compute_amd.tf` - Cassandra AMD compute/block OCI configuration
-`compute_cassandra_stress.tf` - Cassandra stress node fleet OCI configuration
-`variables.tf` — OCI image IDs, subnet ids, vcn ids, tenancy ids, ssh_key ids, etc. 
-`security_groups.tf` — network security group configuration
+* `compute_arm.tf` - Cassandra ARM compute/block OCI configuration
+* `compute_amd.tf` - Cassandra AMD compute/block OCI configuration
+* `compute_cassandra_stress.tf` - Cassandra stress node fleet OCI configuration
+* `variables.tf` — OCI image IDs, subnet ids, vcn ids, tenancy ids, ssh_key ids, etc. 
+* `security_groups.tf` — network security group configuration
 
 
 ## Terraform setup
