@@ -70,3 +70,6 @@ Note depending on if your VNC has a default security list rule of "Allow SSH fro
 
 ## Cassandra boostrapping
 The `bootstrap-oraclelinux.sh` installs and starts Cassandra by default. You can comment out the relevant `dnf install` lines in the bootstrap script if you prefer to install cassandra another way.
+
+## BCC tools
+BCC tools are installed as part of `bootstrap-oraclelinux.sh` to assist with performance analysis 
