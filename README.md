@@ -52,7 +52,7 @@ terraform plan
 terraform apply
 ```
 
-Your infrastructure should begin provisioning. To destroy the infrastructure use `terraform destroy`. If you encounter errors check the tenancy resource limits. Note that the terraform instances provision within 1-3 minutes but the `bootstrap-oraclelinux.sh` may take 5-10 minutes because of the Cassandra bootstrapping and thus a full `dnf update`. Commenting out the `dnf` lines will speed up the bootstrap process. 
+The infrastructure will begin provisioning. To destroy the infrastructure use `terraform destroy`. If you encounter errors, check the tenancy resource limits. Note that the terraform instances provision within 1-3 minutes but the `bootstrap-oraclelinux.sh` may take 5-10 minutes because of the Cassandra bootstrapping and thus a full `dnf update`. Commenting out the `dnf` lines will speed up the bootstrap process. 
 You can `tail -100f /var/log/cloud-init-output.log` to follow the bootstrap process. 
 
 ## Compute Instances
