@@ -34,17 +34,17 @@ variable "x86_image_id" {
 
 variable "amd_node_count" {
   type    = number
-  default = 5
+  default = 30
 }
 
 variable "arm_node_count" {
   type    = number
-  default = 5
+  default = 30
 }
 
 variable "cassandra_stress_node_count" {
   type    = number
-  default = 5
+  default = 30
 }
 
 # Return a list of Availability Domains for a given tenancy
