@@ -29,7 +29,7 @@ resource "oci_core_network_security_group_security_rule" "cassandra_ssh_access" 
   direction   = "INGRESS"
   protocol    = 6
   source_type = "CIDR_BLOCK"
-  source      = "127.0.0.1/32" # changeme
+  source      = "1.1.1.1/32" # changeme
   tcp_options {
     destination_port_range {
       min = 22
